@@ -91,12 +91,15 @@ int main(void) {
 		}
 		
 		
+		// poslat do putty (COM3)
 		UART_OutString(ret);
-		UART_OutChar(CR);
-		UART_OutChar(LF);
+		UART_OutChar(CR); // od-
+		UART_OutChar(LF); // radkovani
 		///lcd_print(1, 0, ret);
 		//UART_InString(ret, 16);
 		
+		
+		//Formatovani casu
 		sprintf(ret, "%02u:%02u:%02u", hodiny, minuty, sekundy);
 		lcd_print(0, 0, ret);
 	}
