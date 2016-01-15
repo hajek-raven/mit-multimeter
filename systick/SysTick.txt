@@ -1,0 +1,27 @@
+str. 136
+//*****************************************************************************
+//
+// The following are defines for the bit fields in the NVIC_ST_CTRL register.
+//
+//*****************************************************************************
+NVIC_ST_CTRL_COUNT      // Count Flag - preteceni, nuluje se ctenim nebo libovolnym zapisem do NVIC_ST_CURRENT
+NVIC_ST_CTRL_CLK_SRC    // Clock Source = 1 System Clock
+NVIC_ST_CTRL_INTEN      // Interrupt Enable
+NVIC_ST_CTRL_ENABLE     // Enable
+
+//*****************************************************************************
+//
+// The following are defines for the bit fields in the NVIC_ST_RELOAD register.
+//
+//*****************************************************************************
+NVIC_ST_RELOAD_M        // Reload Value
+NVIC_ST_RELOAD_S        0
+
+//*****************************************************************************
+//
+// The following are defines for the bit fields in the NVIC_ST_CURRENT
+// register.
+//
+//*****************************************************************************
+NVIC_ST_CURRENT_M       // Current Value
+NVIC_ST_CURRENT_S       0
